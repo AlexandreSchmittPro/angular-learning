@@ -5,5 +5,5 @@ export interface ICars{
   brand : string,
   model : string,
   color : ColorsEnum,
-  price : number
+  price? : number
 }
