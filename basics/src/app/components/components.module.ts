@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 // Components
 import { HeaderComponent } from './layouts/header/header.component';
+import {RouterLink} from "@angular/router";
 
 
 
@@ -10,9 +11,10 @@ import { HeaderComponent } from './layouts/header/header.component';
   declarations: [
     HeaderComponent
   ],
-  imports: [
-    CommonModule
-  ],
+    imports: [
+        CommonModule,
+        RouterLink
+    ],
   exports : [
     HeaderComponent
   ]
