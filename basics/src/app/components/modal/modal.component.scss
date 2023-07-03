@@ -1,0 +1,36 @@
+.overlay-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom : 0;
+  background: rgba(0,0,0,0.5);
+
+  .overlay-modal{
+    position: relative;
+    margin: 0 auto;
+    top: 10%;
+    width: 40%;
+    padding: 15px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    .overlay-modal-header{
+      border-bottom : #f2f2f2 1px solid;
+      text-align: center;
+    }
+
+    .overlay-modal-body{
+      padding: 15px;
+    }
+
+    .modal-footer{
+      padding : 15px 0 0 0;
+      border-top: #f2f2f2 1px solid;
+    }
+
+  }
+}

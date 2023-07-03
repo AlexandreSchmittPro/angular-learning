@@ -3,18 +3,23 @@ import { CommonModule } from '@angular/common';
 
 // Components
 import { HeaderComponent } from './layouts/header/header.component';
+import { ModalComponent } from './modal/modal.component';
+import {RouterOutlet} from "@angular/router";
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    ModalComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterOutlet
   ],
   exports : [
-    HeaderComponent
+    HeaderComponent,
+    ModalComponent
   ]
 })
 export class ComponentsModule { }

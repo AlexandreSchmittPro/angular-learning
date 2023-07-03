@@ -1,1 +1,40 @@
-<p>home works!</p>
+<div class="home">
+  <div class="home-title">
+    <h2 class="title">Create components</h2>
+  </div>
+
+  <div class="home-body">
+    <div class="home-body-title">
+      <h2 class="title">Decorators</h2>
+    </div>
+    <div class="home-body-description">
+      <p>@Input() : Envoyer des data parent => enfant</p>
+      <p>@Output() : Envoyer des données enfant => parent</p>
+    </div>
+    <div class="home-body-example-container d-flex flex-row mb-3">
+      <div class="home-body-example p-2">
+        <div class="home-body-example-title">
+          <h3 class="title-test">Show Cars : @Input : Parent => Child</h3>
+        </div>
+
+
+        <div class="home-body-example-data">
+          <app-child *ngFor="let car of cars" [car]="car"></app-child>
+        </div>
+      </div>
+
+      <div class="home-body-example p-2 mLeft">
+        <div class="home-body-example-title">
+          <h3 class="title">Add Car : @Output : Child => Parent</h3>
+        </div>
+
+        <div class="home-body-example-data">
+          <app-button-add-car (newCarEvent)="addCarFromChild($event)"></app-button-add-car>
+        </div>
+
+      </div>
+    </div>
+
+    <!--    <app-modal componentName="childComponent"></app-modal>-->
+  </div>
+</div>

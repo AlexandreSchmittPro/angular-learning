@@ -1,0 +1,19 @@
+.home{
+  margin: 15px 5%;
+  &-title{
+    color: $color;
+  }
+  &-body{
+    margin: 15px 5%;
+    &-description{
+      margin: 15px 5%;
+    }
+    &-example{
+      margin-left : 50px;
+      .home-body-example-data{
+        margin: 15px 5%;
+      }
+    }
+
+  }
+}
