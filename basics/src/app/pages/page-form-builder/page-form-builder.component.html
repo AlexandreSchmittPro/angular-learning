@@ -1,1 +1,74 @@
-<p>page-form-builder works!</p>
+<div class="page">
+  <div class="page-title">
+    <h2>Form builder</h2>
+  </div>
+
+  <div class="page-body container">
+    <div class="col">
+      <div class="row">
+        <form [formGroup]="form!" (ngSubmit)="onSubmit()">
+          <!--   Username   -->
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Username" formControlName="username">
+            </div>
+            <div *ngIf="form.controls['username'].errors?.['required']" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <!--   FirstName   -->
+          <div class="mb-3">
+            <label class="form-label">Firstname</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Firstname" formControlName="firstName">
+            </div>
+            <div  class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <!--   Lastname   -->
+          <div class="mb-3">
+            <label class="form-label">LastnName</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="LastName" formControlName="lastName">
+            </div>
+            <div  class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <!--   Email     -->
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Email" formControlName="email">
+            </div>
+            <div  class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div formGroupName="address">
+            <!--   City     -->
+            <div class="mb-3">
+              <label class="form-label">City</label>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="City" formControlName="city">
+              </div>
+              <div  class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <!--   Code     -->
+            <div class="mb-3">
+              <label class="form-label">Code</label>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Code" formControlName="code">
+              </div>
+              <div  class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <!--   Street     -->
+            <div class="mb-3">
+              <label class="form-label">Street</label>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Street" formControlName="street">
+              </div>
+              <div  class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+          </div>
+          <!--   Button Submit     -->
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

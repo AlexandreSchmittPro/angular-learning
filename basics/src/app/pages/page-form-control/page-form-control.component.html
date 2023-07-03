@@ -1,1 +1,22 @@
-<p>page-form-control works!</p>
+<div class="page">
+  <div class="page-title">
+    <h2>Form control</h2>
+  </div>
+
+  <div class="page-body container">
+    <div class="col">
+      <div class="row">
+        <div class="mb-3">
+          <label class="form-label">Search a city</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search a city" [formControl]="city" (ngModelChange)="getDataFromInput($event)">
+            <button class="btn btn-outline-primary" type="button" id="button-addon2">Button</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/World_map_nations.svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
